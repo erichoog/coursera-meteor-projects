@@ -1,0 +1,187 @@
+<template name="playground">
+
+<div class="containerBody">
+  <p>Welcome to Music Machine 2015.  All you need to do is turn on each track you want to play, set the speed and volume with the sliders and you'll be making music in no time.</p>
+  <p>Get your friends to join in by visiting this page and you can make music at the same time!</p>
+  <br>
+    <!-- Remember - if you want to control functions globaly, don't declare them as var. Just name them. -->
+
+    <!--<button class="startButton">DAC</button>-->
+
+    <div class="rowTrack1 row well well-sm">
+        <div class="col-md-2 col-sm-3 col-xs-7">
+            <span class="trackTitle">Track 1 - Drum Track</span>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-2">
+            <button class="track1On">ON</button>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-3">
+            <button class="track1Off">OFF</button>
+        </div>
+        <div class="col-md-4 col-sm-3 col-xs-12">
+            <div id="t1S1"></div> 
+            Current Speed = {{t1S1Val}} 
+        </div>
+        <div class="col-md-4 col-sm-3 col-xs-12">
+            <div id="t1S2"></div>
+            Current Volume = {{t1S2Val}}
+        </div>
+    </div>
+
+    <div class="rowTrack2 row well well-sm">
+        <div class="col-md-2 col-sm-3 col-xs-7">
+            <span class="trackTitle">Track 2 - Bass Drum</span>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-2">
+            <button class="track2On">ON</button>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-3">
+            <button class="track2Off">OFF</button>
+        </div>
+        <div class="col-md-4 col-sm-3 col-xs-12">
+            <div id="t2S1"></div> 
+            Current Speed = {{t2S1Val}} 
+        </div>
+        <div class="col-md-4 col-sm-3 col-xs-12">
+            <div id="t2S2"></div>
+            Current Volume = {{t2S2Val}}
+        </div>
+    </div>
+
+    <div class="rowTrack3 row well well-sm">
+        <div class="col-md-2 col-sm-3 col-xs-7">
+            <span class="trackTitle">Track 3 - Snare Drum</span>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-2">
+            <button class="track3On">ON</button>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-3">
+            <button class="track3Off">OFF</button>
+        </div>
+        <div class="col-md-4 col-sm-3 col-xs-12">
+            <div id="t3S1"></div> 
+            Current Speed = {{t3S1Val}} 
+        </div>
+        <div class="col-md-4 col-sm-3 col-xs-12">
+            <div id="t3S2"></div>
+            Current Volume = {{t3S2Val}}
+        </div>
+    </div>
+
+    <div class="rowTrack4 row well well-sm">
+        <div class="col-md-2 col-sm-3 col-xs-7">
+            <span class="trackTitle">Track 4 - HiHat</span>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-2">
+            <button class="track4On">ON</button>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-3">
+            <button class="track4Off">OFF</button>
+        </div>
+        <div class="col-md-4 col-sm-3 col-xs-12">
+            <div id="t4S1"></div> 
+            Current Speed = {{t4S1Val}} 
+        </div>
+        <div class="col-md-4 col-sm-3 col-xs-12">
+            <div id="t4S2"></div>
+            Current Volume = {{t4S2Val}}
+        </div>
+    </div>
+
+    <div class="rowTrack5 row well well-sm">
+        <div class="col-md-2 col-sm-3 col-xs-7">
+            <span class="trackTitle">Track 5 - Cymbal</span>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-2">
+            <button class="track5On">ON</button>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-3">
+            <button class="track5Off">OFF</button>
+        </div>
+        <div class="col-md-4 col-sm-3 col-xs-12">
+            <div id="t5S1"></div> 
+            Current Speed = {{t5S1Val}} 
+        </div>
+        <div class="col-md-4 col-sm-3 col-xs-12">
+            <div id="t5S2"></div>
+            Current Volume = {{t5S2Val}}
+        </div>
+    </div>
+
+    <div class="rowTrack6 row well well-sm">
+        <div class="col-md-2 col-sm-3 col-xs-7">
+            <span class="trackTitle">Track 6 - Bass Line</span>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-2">
+            <button class="track6On">ON</button>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-3">
+            <button class="track6Off">OFF</button>
+        </div>
+        <div class="col-md-4 col-sm-3 col-xs-12">
+            <div id="t6S1"></div> 
+            Current Speed = {{t6S1Val}} 
+        </div>
+        <div class="col-md-4 col-sm-3 col-xs-12">
+            <div id="t6S2"></div>
+            Current Volume = {{t6S2Val}}
+        </div>
+    </div>
+    
+    <div class="rowTrack7 row well well-sm">
+        <div class="col-md-2 col-sm-3 col-xs-7">
+            <span class="trackTitle">Track 7 - Double Bass</span>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-2">
+            <button class="track7On">ON</button>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-3">
+            <button class="track7Off">OFF</button>
+        </div>
+        <div class="col-md-4 col-sm-3 col-xs-12">
+            <div id="t7S1"></div> 
+            Current Speed = {{t7S1Val}} 
+        </div>
+        <div class="col-md-4 col-sm-3 col-xs-12">
+            <div id="t7S2"></div>
+            Current Volume = {{t7S2Val}}
+        </div>
+    </div>
+
+    <div class="rowTrack8 row well well-sm">
+        
+            <div class="col-md-2 col-sm-3 col-xs-7">
+                <span class="trackTitle">Track 8 - Arp</span>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <button class="track8On">ON</button>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-3">
+                <button class="track8Off">OFF</button>
+            </div>
+            <div class="col-md-4 col-sm-3 col-xs-12">
+                <div id="t8S1"></div> 
+                Current Speed = {{t8S1Val}} 
+            </div>
+            <div class="col-md-4 col-sm-3 col-xs-12">
+                <div id="t8S2"></div>
+                Current Volume = {{t8S2Val}}
+            </div>
+
+    </div>
+
+    <h2> 
+        <!--{{startdac}}--> 
+        {{track1}} 
+        {{track2}} 
+        {{track3}} 
+        {{track4}} 
+        {{track5}} 
+        {{track6}} 
+        {{track7}} 
+        {{track8}} 
+    </h2>
+ 
+ </div>
+
+</template>

@@ -1,0 +1,77 @@
+
+container {
+    padding-top: 70px;
+}
+
+li.active {
+    padding-right: 30px;
+}
+
+button.pallet {
+    width: 40px;
+    height: 40px;
+}
+
+button.red {
+    background-color: red;
+}
+
+button.blue {
+    background-color: blue;
+}
+
+button.green {
+    background-color: green;
+}
+
+button.black {
+    background-color: black;
+}
+
+button.grey {
+    background-color: grey;
+}
+
+button.white {
+    background-color: white;
+}
+
+button.yellow {
+    background-color: yellow;
+}
+
+button.purple {
+    background-color: purple;
+}
+
+button.brown {
+    background-color: brown;
+}
+
+button.lightblue {
+    background-color: lightblue;
+}
+
+button.darkblue {
+    background-color: darkblue;
+}
+
+button.lightgreen {
+    background-color: lightgreen;
+}
+
+button.darkgreen {
+    background-color: darkgreen;
+}
+
+button.lightgrey {
+    background-color: lightgrey;
+}
+
+button.darkgrey {
+    background-color: darkgrey;
+}
+
+button.gold {
+    background-color: gold;
+}

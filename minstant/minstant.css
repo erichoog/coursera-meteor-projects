@@ -1,0 +1,21 @@
+/* CSS declarations go here */
+
+.user_avatar{
+	min-height:100px;
+	text-align: center;
+
+}
+.avatar_img{
+	height:75px;
+}
+
+.message_avatar
+{
+	height:30px;
+    width: 30px;
+}
+
+.messageSenderName{
+	font-weight: bolder;
+	font-size: medium;	
+}
